@@ -209,8 +209,22 @@
             <img src="img/map.png" alt="г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8" width="300px">
           </a>
           <a href="#" class="btn">Заблудились? Напишите нам!</a>
-          <div class="modal">
-
+            <form class="modal">
+              <fieldset>
+                <label>Ваше имя:
+                  <input type="text" name="login" value="Представьтесь, пожалуйста"></input>
+                </label>
+                <label>Ваш e-mail:
+                  <input type="email" name="email" value="Для отправки ответа"></input>
+                </label>
+              </fieldset>
+              <fieldset>
+                <label>Текст письма:
+                  <textarea rows="6" cols="40" name="text">В свободной форме</textarea>
+                </label>
+              </fieldset>
+              <input type="submit" value="Отправить"></input>
+            </form>
           </div>
         </section>
       </div>
