@@ -15,7 +15,6 @@ h1 {
 
 h2 {
   font-size: 30px;
-  line-height: 24px;
   font-weight: normal;
   text-transform: uppercase;
 }
@@ -38,7 +37,6 @@ h2 {
 
 h3 {
   font-size: 36px;
-  line-height: 24px;
   color: #32425c;
   font-weight: normal;
   text-transform: uppercase;
@@ -46,4 +44,283 @@ h3 {
 
 p {
   font-family: PT Sans;
+}
+
+a {
+  display: block;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.container {
+  width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.logo {
+  position: absolute;
+  font-size: 24px;
+  padding-top: 12px;
+  padding-bottom: 6px;
+  width: 220px;
+  text-align: center;
+  color: white;
+  background-color: #ee3643;
+  border-bottom: solid 5px #b52933;
+  text-transform: uppercase;
+}
+
+ul {
+  list-stile: none;
+}
+
+section {
+  padding:0;
+  margin:0;
+}
+
+li {
+  display: inline-block;
+}
+
+.header-top {
+  background-color: #293449;
+  height: 42px;
+}
+.header-top .container {
+    position: relative;
+}
+
+.header-top ul {
+  position: absolute;
+  right: 0;
+}
+
+.header form {
+  position: absolute;
+  top: 0;
+  left: 220px;
+}
+.user-interaction {
+  min-height: 158px;
+}
+
+.about {
+  float: left;
+  width: 300px;
+  margin: 0;
+}
+.top-contacts {
+  float: left;
+  width: 300px;
+  margin: 0;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.personal {
+  float: right;
+  width: 300px;
+}
+
+.personal a {
+  display: block;
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.authorized {
+  display: none;
+}
+
+nav {
+  background-color: #32425c;
+  border-bottom: 3px solid #293449;
+}
+
+main {
+    display: block;
+    min-width: 200px;
+    padding: 0;
+    margin:0;
+    background-color: white;
+}
+
+main::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+section {
+  min-height: 300px;
+  margin: 0;
+  padding: 10px;
+}
+
+.section-head {
+  display: block;
+  background-color: #f7f3ec;
+  padding: 0;
+}
+.section-head ul {
+  float: right;
+  margin: 0;
+}
+
+.slider-box {
+  position: relative;
+}
+
+.slider {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.materials {
+  background-color: #f6b22d;
+}
+
+.instrument {
+  background-color: #4aafde;
+}
+
+.technics {
+   background-color: #cc79d1;
+}
+
+.discount {
+  background-color: #85d179;
+}
+
+.delivery {
+   background-color: #f6b22d;
+}
+
+.promo {
+    display: inline-block;
+}
+
+.catalog {
+  margin: 0;
+  padding:0
+}
+
+.items {
+  padding: 0px;
+}
+
+.item {
+  display: inline-block;
+  vertical-align: top;
+  width: 215px;
+  height: 315px;
+  margin: 5px;
+  border: 1px solid #e5e5e5;
+}
+.item a {
+  font-family: PT Sans;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 20px;
+  color: #000000;
+  text-align: center;
+}
+
+.item-buttons {
+  display: none;
+}
+
+.brand {
+  display: inline-block;
+  vertical-align: top;
+  width: 218px;
+  height: 143px;
+  border: 1px solid #e5e5e5;
+}
+
+.services {
+   background-color: #f2f6f8;
+}
+
+.about-company {
+  float: left;
+  width: 450px;
+  min-height: 450px;
+}
+
+.contacts {
+  float: right;
+  min-height: 450px;
+}
+
+.modal {
+  display: none;
+}
+
+.catalog-head {
+  background-color: #f2f6f8;
+  paddin-left: 30px;
+  padding-top: 15px;
+  padding-bottom: 17px;
+}
+
+.filter {
+  float: left;
+  margin: 0;
+  width: 200px;
+}
+
+.filter input {
+  display: block;
+}
+
+.main-catalog  {
+  float: right;
+  margin: 0;
+  width: 698px;
+}
+.few-words {
+  background-color: #f2f6f8;
+}
+
+.footer .logo {
+  font-size: 30px;
+  line-height: 30px;
+  padding-top:16px;
+  padding-bottom: 16px;
+  width: 220px;
+  height: auto;
+}
+
+.footer-top {
+  height: 193px;
+  background-color: #32425c;
+}
+
+.footer-bottom {
+  height: 107px;
+  background-color: #293449;
+}
+
+.footer-top ul,
+.social,
+.htmlacademy {
+  float: right;
+}
+
+.copyright,
+.address {
+  float: left;
+}
+
+.btn {
+  background: #ee3643;
+
 }

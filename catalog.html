@@ -6,7 +6,7 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <header>
+    <header class="header">
       <div class="header-top">
         <div class="container">
           <a href="technomart.ru" class="logo">Техномарт</a>
@@ -14,17 +14,23 @@
             <label>Поиск <input type="search" name="search"></label>
             <input type="submit" value="Поиск">
           </form>
-          <a href="#" class="bookmarks">Закладки
-            <span class="bookmarks-counter">0</span>
-          </a>
-          <a href="#" class="cart full">Корзина
-            <span class="cart-counter">10</span>
-          </a>
-          <a href="#" class="get">Оформить заказ</a>
+          <ul>
+            <li>
+              <a href="#" class="bookmarks">Закладки
+                <span class="bookmarks-counter">0</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="cart full">Корзина
+                <span class="cart-counter">10</span>
+              </a>
+            </li>
+            <li><a href="#" class="get">Оформить заказ</a></li>
+          </ul>
         </div>
       </div>
       <section class="user-interaction container">
-        <div class="about">Интернет-магазин строительных материалов и инструментов для ремонта</div>
+        <span class="about">Интернет-магазин строительных материалов и инструментов для ремонта</span>
         <div class="top-contacts">
           <div class="telephone">+7 (812) 555-05-55</div>
           <div class="address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</div>
@@ -55,7 +61,7 @@
       </nav>
     </header>
     <main>
-      <div class="container">
+      <div class="container clearfix">
         <ul class="breadcrumbs">
           <li><a href="#" class="home">Главная</a></li>
           <li><a href="#">Каталог</a></li>
@@ -253,7 +259,7 @@
         </div>
       </div>
     </main>
-    <footer>
+    <footer class="footer">
       <div class="footer-top">
         <div class="container">
           <a href="#" class="logo">Техномарт</a>
