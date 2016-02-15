@@ -54,7 +54,6 @@ a {
 .logo {
   float: left;
   width: 220px;
-  margin-right: 5px;
   font-size: 24px;
   text-transform: uppercase;
   text-align: center;
@@ -93,6 +92,7 @@ li {
 
 .header-top form {
   float: left;
+  width: 270px;
   font-size: 17px;
   color: #ffffff;
 }
@@ -102,27 +102,22 @@ li {
 }
 
 .header-top input{
+  min-height: 40px;
   border: none;
   background-color: #293449;
 }
 
-.header-top form:before {
-  background-image: url("../img/icon-search.png");
-  background-repeat: no-repeat;
-}
-
 .header-top ul {
   float: right;
-  width: 450px;
-  margin: 0;
+  padding-left: 0;
+  max-width: 450px;
+  font-size: 0;
 }
 
 .header-top ul a {
-  width: 140px;
-  margin-right: 5px;
+  width: 150px;
   font-size: 17px;
   text-align: center;
-  background-color: #293449;
 }
 
 .header-top ul .get {
@@ -131,10 +126,9 @@ li {
 
 .about {
   float: left;
-  width: 247px;
+  width: 267px;
+  min-height: 100px;
   padding-left: 53px;
-  margin-right: 20px;
-  margin-bottom: 40px;
   font-size: 17px;
   font-style: italic;
   line-height: 23px;
@@ -143,8 +137,8 @@ li {
 
 .top-contacts {
   float: left;
-  width: 300px;
-  margin-right: 5px;
+  width: 320px;
+  min-height: 100px;
 }
 
 .telephone {
@@ -164,19 +158,21 @@ li {
 
 .user-interaction .personal {
   float: right;
-  width: 281px;
-  padding-left: 19px;
+  width: 300px;
+  min-height: 100px;
 }
 
 .user-interaction .personal a {
   color: #000000;
 }
 
+.unauthorized {
+  text-align: right;
+}
 .user-interaction .unauthorized a {
   display: inline-block;
   vertical-align: top;
-  padding-right: 25px;
-  padding-left: 25px;
+  min-width: 120px;
   font-size: 21px;
   line-height: 45px;
   text-align: center;
@@ -185,11 +181,12 @@ li {
 
 .unauthorized a.registration {
   margin-left: 10px;
+  min-width: 150px;
 }
 
 .authorized .name {
-  width: 300px;
-  padding: 0;
+  max-width: 300px;
+  margin-bottom: 5px;
   font-size: 21px;
   line-height: 45px;
   background-color: #ffffff;
@@ -199,8 +196,9 @@ li {
   font-size: 0;
 }
 
-.user-interaction .authorized ul a {
+.user-interaction .authorized > a {
   display: inline;
+  margin-left: 15px;
   font-size: 16px;
   color: #ee3643;
   text-decoration: underline;
@@ -277,7 +275,7 @@ nav a {
 .promo-name {
   font-size: 24px;
   padding-left: 20px;
-  padding-top: 10px;
+  padding-top: 20px;
   padding-bottom: 14px;
 }
 
@@ -285,7 +283,7 @@ nav a {
   width: 135px;
   margin-left: 25px;
   margin-bottom: 22px;
-  background-color: #e5e5e5;
+  background-color: rgba(0, 0, 0 , 0.1);;
 }
 
 .slider-box .delivery {
@@ -296,8 +294,16 @@ nav a {
   position: relative;
   float: left;
   width: 620px;
-  min-height: 235px;
+  min-height: 255px;
   margin-right: 20px;
+}
+
+.slider-box .first {
+  background-image: url("../img/bg-slider-perforator.jpg");
+}
+
+.slider-box .second {
+  background-image: url("../img/bg-slider-drill.jpg");
 }
 
 .slider .btn {
@@ -356,6 +362,7 @@ nav a {
   margin-right: 20px;
   margin-bottom: 20px;
   font-size: 17px;
+  text-align: center;
   border: 1px solid #e5e5e5;
 }
 
@@ -397,47 +404,70 @@ nav a {
 }
 
 .services {
-  padding-bottom: 100px;
   margin-bottom: 40px;
   background-color: #f2f6f8;
-  background-image: url("../img/service-car.png");
-  background-repeat: no-repeat;
-  background-position: 70% 100%;
 }
+
 .services h2 {
   padding-top: 65px;
 }
 
 .services p {
-  width: 400px;
-  margin-bottom: 30px;
+  padding-bottom: 30px;
 }
 
-.services-slider{
-  width: 595px;
-}
 .services-slider ul {
   float: left;
   width: 240px;
-  margin-left: -40px;
+  padding-left: 0;
   margin-top: 35px;
 }
 
 .services-slider ul button {
-  width: 240px;
+  width: 220px;
+  padding-left: 20px;
   font-size: 21px;
+  line-height: 57px;
   color: #ffffff;
   text-align: left;
   background-color: #32425c;
+  border: none;
+  border-top: 1px solid #405069;
+  border-bottom: 1px solid #293449;
 }
 
-.slider-content-active {
+.services-slider-buttons .active {
+  color: #32425c;
+  background-color: #ffffff;
+  border: none;
+}
+
+.slider-content-delivery {
   float:right;
   width: 275px;
+  min-height: 315px;
+  padding-right: 344px;
+  background-image: url("../img/service-car.png");
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
 }
 
-.slider-content {
+.slider-content-guarantee {
   display: none;
+  float:right;
+  width: 275px;
+  background-image: url("../img/service-guarantee.png");
+  background-repeat: no-repeat;
+  background-position: 70% 100%;
+}
+
+.slider-content-credit {
+  display: none;
+  float: right;
+  width: 275px;
+  background-image: url("../img/service-credit.png");
+  background-repeat: no-repeat;
+  background-position: 70% 100%;
 }
 
 .breadcrumbs a {
@@ -657,38 +687,33 @@ fieldset.power {
 
 .footer-top ul {
   float: right;
-  min-width: 560px;
-  padding: 0;
+  max-width: 600px;
   margin: 0;
 }
 
 .first-line ul {
-  margin-top: 20px;
-}
-
-.first-line ul a {
-  padding-right: 30px;
-  padding-left: 25px;
-  font-size: 17px;
-  line-height: 55px;
+  padding-top: 40px;
 }
 
 .second-line ul {
   margin-bottom: 60px;
+  padding-top: 30px;
+}
+
+.footer-top ul a {
+  display: inline;
+  padding-left: 55px;
+  font-size: 17px;
 }
 
 .second-line ul a {
-  padding-right: 30px;
-  padding-left: 25px;
-  font-size: 17px;
-  line-height: 55px;
   color: #ffd180;
 }
 
 .footer .address {
   float: left;
   width: 325px;
-  padding-top: 15px;
+  padding-top: 30px;
   font-size: 18px;
   color: #f1f5f7;
 }
