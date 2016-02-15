@@ -7,10 +7,10 @@ body {
 
 h1 {
   font-size: 30px;
-  line-height: 30px;
   font-weight: normal;
-  color: #32425c;
   text-transform: uppercase;
+  line-height: 30px;
+  color: #32425c;
 }
 
 h2 {
@@ -21,9 +21,9 @@ h2 {
 
 h3 {
   font-size: 36px;
-  color: #32425c;
   font-weight: normal;
   text-transform: uppercase;
+  color: #32425c;
 }
 
 .clearfix::after {
@@ -33,7 +33,7 @@ h3 {
 }
 
 p {
-  font-family: PT Sans;
+  font-family: "PT Sans", Arial, sans-serif;
 }
 
 a {
@@ -53,12 +53,12 @@ a {
 
 .logo {
   float: left;
-  font-size: 24px;
   width: 220px;
   margin-right: 5px;
+  font-size: 24px;
+  text-transform: uppercase;
   text-align: center;
   background-color: #ee3643;
-  text-transform: uppercase;
   box-shadow: 0 5px 0 0  #b52933;
 }
 
@@ -74,21 +74,21 @@ li {
 .btn {
   font-size: 14px;
   line-height: 37px;
+  text-transform: uppercase;
+  text-align: center;
   background: #ee3643;
   border-radius: 2px;
-  text-align: center;
-  text-transform: uppercase;
 }
 
 .header {
-  background-color: #f1f5f7;
   padding-bottom: 50px;
+  background-color: #f1f5f7;
 }
 
 .header-top {
-  background-color: #293449;
-  line-height: 42px;
   margin-bottom: 45px;
+  line-height: 42px;
+  background-color: #293449;
 }
 
 .header-top form {
@@ -107,22 +107,22 @@ li {
 }
 
 .header-top form:before {
-  background-image: url(img/icon-search.png);
+  background-image: url("../img/icon-search.png");
   background-repeat: no-repeat;
 }
 
 .header-top ul {
   float: right;
-  margin: 0;
   width: 450px;
+  margin: 0;
 }
 
 .header-top ul a {
-  font-size: 17px;
-  margin-right: 5px;
   width: 140px;
-  background-color: #293449;
+  margin-right: 5px;
+  font-size: 17px;
   text-align: center;
+  background-color: #293449;
 }
 
 .header-top ul .get {
@@ -131,14 +131,14 @@ li {
 
 .about {
   float: left;
-  font-size: 17px;
-  font-style: italic;
-  line-height: 23px;
-  color: #ee3643;
   width: 247px;
   padding-left: 53px;
   margin-right: 20px;
   margin-bottom: 40px;
+  font-size: 17px;
+  font-style: italic;
+  line-height: 23px;
+  color: #ee3643;
 }
 
 .top-contacts {
@@ -148,17 +148,17 @@ li {
 }
 
 .telephone {
+  width: 260px;
   font-size: 21px;
   line-height: 39px;
   text-align: center;
   color: #e9292a;
-  width: 260px;
   border: 3px solid #ffffff;
 }
 
 .address {
-  font-size: 14px;
   padding: 5px;
+  font-size: 14px;
   color: #32425c;
 }
 
@@ -174,12 +174,12 @@ li {
 
 .user-interaction .unauthorized a {
   display: inline-block;
-  font-size: 21px;
-  line-height: 45px;
-  text-align: center;
   vertical-align: top;
   padding-right: 25px;
   padding-left: 25px;
+  font-size: 21px;
+  line-height: 45px;
+  text-align: center;
   background-color: #ffffff;
 }
 
@@ -188,10 +188,10 @@ li {
 }
 
 .authorized .name {
+  width: 300px;
+  padding: 0;
   font-size: 21px;
   line-height: 45px;
-  padding: 0;
-  width: 300px;
   background-color: #ffffff;
 }
 
@@ -212,15 +212,15 @@ nav ul {
 }
 
 nav a {
-  font-size: 17px;
-  line-height: 55px;
   padding-right: 30px;
   padding-left: 25px;
+  font-size: 17px;
+  line-height: 55px;
 }
 
 .section-head {
-  background-color: #f7f3ec;
   margin-bottom: 20px;
+  background-color: #f7f3ec;
 }
 
 .section-head h2 {
@@ -234,8 +234,8 @@ nav a {
 .section-head .btn {
   float: right;
   width: 252px;
-  text-align: center;
   margin: 24px;
+  text-align: center;
 }
 
 .slider-box {
@@ -246,8 +246,8 @@ nav a {
 .promo {
   float:left;
   width: 300px;
-  color: #ffffff;
   margin-bottom: 20px;
+  color: #ffffff;
 }
 
 .slider-box-top .promo {
@@ -261,15 +261,15 @@ nav a {
 }
 
 .slider h2 {
-  font-size: 36px;
-  color: #ffffff;
-  font-weight: bold;
   padding-left: 25px;
+  font-size: 36px;
+  font-weight: bold;
+  color: #ffffff;
 }
 
 .slider span {
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 18px;
-  font-family: PT Sans;
   font-weight: normal;
   text-transform: none;
 }
@@ -282,10 +282,10 @@ nav a {
 }
 
 .promo .btn {
-  background-color: #e5e5e5;
   width: 135px;
   margin-left: 25px;
   margin-bottom: 22px;
+  background-color: #e5e5e5;
 }
 
 .slider-box .delivery {
@@ -296,13 +296,13 @@ nav a {
   position: relative;
   float: left;
   width: 620px;
-  height: 235px;
+  min-height: 235px;
   margin-right: 20px;
 }
 
 .slider .btn {
   position: absolute;
-  bottom:22px;
+  bottom: 22px;
   left: 25px;
   width: 195px;
 }
@@ -310,15 +310,15 @@ nav a {
 .slider span.prev {
   position: absolute;
   bottom: 111px;
-  font-size: 0;
   left: 25px;
+  font-size: 0;
 }
 
 .slider span.next {
   position: absolute;
   bottom: 111px;
-  font-size: 0;
   right: 20px;
+  font-size: 0;
 }
 
 .materials {
@@ -349,13 +349,13 @@ nav a {
 }
 
 .item {
-  font-size: 17px;
   display: inline-block;
   vertical-align: top;
   width: 218px;
   min-height: 315px;
   margin-right: 20px;
   margin-bottom: 20px;
+  font-size: 17px;
   border: 1px solid #e5e5e5;
 }
 
@@ -364,7 +364,7 @@ nav a {
 }
 
 .item a {
-  font-family: PT Sans;
+  font-family: "PT Sans", Arial, sans-serif;
   font-weight: bold;
   font-size: 18px;
   line-height: 20px;
@@ -384,11 +384,11 @@ nav a {
 .brand {
   display: inline-block;
   vertical-align: top;
-  text-align: center;
   width: 218px;
   min-height: 143px;
   margin-right: 20px;
   margin-bottom: 20px;
+  text-align: center;
   border: 1px solid #e5e5e5;
 }
 
@@ -400,7 +400,9 @@ nav a {
   padding-bottom: 100px;
   margin-bottom: 40px;
   background-color: #f2f6f8;
-  background-image: url("img/service-car");
+  background-image: url("../img/service-car.png");
+  background-repeat: no-repeat;
+  background-position: 70% 100%;
 }
 .services h2 {
   padding-top: 65px;
@@ -422,10 +424,10 @@ nav a {
 }
 
 .services-slider ul button {
+  width: 240px;
   font-size: 21px;
   color: #ffffff;
   text-align: left;
-  width: 240px;
   background-color: #32425c;
 }
 
@@ -439,11 +441,11 @@ nav a {
 }
 
 .breadcrumbs a {
-  font-family: PT Sans;
-  text-transform: uppercase;
-  color: #000000;
   padding-left: 15px;
   padding-right: 15px;
+  font-family: "PT Sans", Arial, sans-serif;
+  text-transform: uppercase;
+  color: #000000;
 }
 
 .breadcrumbs li:first-child {
@@ -451,31 +453,31 @@ nav a {
 }
 
 .catalog-head {
-  background-color: #f2f6f8;
   padding-left: 30px;
   padding-top: 15px;
   padding-bottom: 10px;
   margin-bottom: 20px;
+  background-color: #f2f6f8;
 }
 
 .filter {
   float: left;
   width: 200px;
-  font-family: PT Sans;
-  text-transform: uppercase;
   margin: 0;
+  font-family: "PT Sans", Arial, sans-serif;
+  text-transform: uppercase;
 }
 
 .filter .section-head {
-  line-height: 35px;
-  color: #000000;
   padding-left: 29px;
   margin-bottom: 0;
+  line-height: 35px;
+  color: #000000;
 }
 .filter legend {
-  font-weight: bold;
   padding-bottom: 5px;
   padding-top: 15px;
+  font-weight: bold;
 }
 
 fieldset {
@@ -491,19 +493,19 @@ fieldset.power {
 
 .filter label {
   display: block;
-  font-size: 15px;
   padding-bottom: 15px;
+  font-size: 15px;
 }
 
 .btn-catalog {
-  font-family: PT Sans;
+  font-family: "PT Sans", Arial, sans-serif;
   text-transform: uppercase;
+  text-align: center;
+  line-height: 36px;
   color: #000000;
   background-color: #ffffff;
   border: 1px solid #e5e5e5;
   border-radius: 2px;
-  text-align: center;
-  line-height: 36px;
 }
 
 .filter .btn-catalog {
@@ -518,11 +520,11 @@ fieldset.power {
 }
 
 .main-catalog .section-head {
-  font-family: PT Sans;
+  padding-left: 29px;
+  font-family: "PT Sans", Arial, sans-serif;;
   line-height: 35px;
   text-transform: uppercase;
   color: #000000;
-  padding-left: 29px;
 }
 
 .main-catalog .section-head ul {
@@ -531,11 +533,11 @@ fieldset.power {
 
 .main-catalog .section-head a {
   display: inline;
-  color: #000000;
-  opacity: 0.3;
-  text-align: right;
   margin-left: 30px;
   margin-right: 30px;
+  text-align: right;
+  color: #000000;
+  opacity: 0.3;
 }
 
 .main-catalog .section-head a:last-child {
@@ -572,7 +574,7 @@ fieldset.power {
 }
 
 .about-company p {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .about-company ul {
@@ -581,13 +583,15 @@ fieldset.power {
 
 .about-company li {
   display: block;
-}
-.about-company ul span {
   font-size: 18px;
   line-height: 35px;
 }
 
 .about-company li:before {
+  display: block;
+  margin-left: -35px;
+  margin-bottom: -20px;
+  margin-top: 20px;
   content:"";
   width: 25px;
   height: 2px;
@@ -621,9 +625,9 @@ fieldset.power {
 }
 
 .few-words {
-  background-color: #f2f6f8;
   padding-top: 60px;
   padding-bottom: 60px;
+  background-color: #f2f6f8;
 }
 
 .few-words b {
@@ -646,9 +650,9 @@ fieldset.power {
 }
 
 .footer-bottom {
-  background-color: #293449;
   padding-top: 32px;
   padding-bottom: 32px;
+  background-color: #293449;
 }
 
 .footer-top ul {
@@ -663,10 +667,10 @@ fieldset.power {
 }
 
 .first-line ul a {
-  font-size: 17px;
-  line-height: 55px;
   padding-right: 30px;
   padding-left: 25px;
+  font-size: 17px;
+  line-height: 55px;
 }
 
 .second-line ul {
@@ -674,25 +678,25 @@ fieldset.power {
 }
 
 .second-line ul a {
-  font-size: 17px;
-  line-height: 55px;
   padding-right: 30px;
   padding-left: 25px;
+  font-size: 17px;
+  line-height: 55px;
   color: #ffd180;
 }
 
 .footer .address {
   float: left;
   width: 325px;
+  padding-top: 15px;
   font-size: 18px;
   color: #f1f5f7;
-  padding-top: 15px;
 }
 
 .copyright {
   float: left;
-  font-size: 16px;
   width: 340px;
+  font-size: 16px;
   color: #ffffff;
 }
 
@@ -714,16 +718,16 @@ fieldset.power {
 }
 
 .htmlacademy-email {
-  font-size: 16px;
   float: left;
   width: 170px;
+  font-size: 16px;
   color: #ffffff;
 }
 
 .htmlacademy {
-  font-size: 16px;
   float: right;
   width: 110px;
+  font-size: 16px;
   color: #ffffff;
 }
 
