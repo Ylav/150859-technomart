@@ -38,12 +38,15 @@ p {
 
 a {
   display: inline-block;
-  color: #ffffff;
+  vertical-align: top;
   text-decoration: none;
+  color: #ffffff;
 }
 
 .container {
   width: 940px;
+  padding-left: 10px;
+  padding-right: 10px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -51,14 +54,12 @@ a {
 .logo {
   float: left;
   font-size: 24px;
-  line-height: 42px;
   width: 220px;
   margin-right: 5px;
   text-align: center;
-  color: white;
   background-color: #ee3643;
-  border-bottom: 5px solid #b52933;
   text-transform: uppercase;
+  box-shadow: 0 5px 0 0  #b52933;
 }
 
 ul {
@@ -67,6 +68,7 @@ ul {
 
 li {
   display: inline-block;
+  vertical-align: top;
 }
 
 .btn {
@@ -74,29 +76,34 @@ li {
   line-height: 37px;
   background: #ee3643;
   border-radius: 2px;
-  text-align:center;
+  text-align: center;
   text-transform: uppercase;
+}
+
+.header {
+  background-color: #f1f5f7;
+  padding-bottom: 50px;
 }
 
 .header-top {
   background-color: #293449;
-  min-height: 42px;
-  color: #ffffff;
-}
-.header-top input[type="submit"] {
-  display: none;
-}
-
-.header-top input{
-  min-height: 42px;
-  border: none;
-  background-color: #293449;
-  width: 150px;
+  line-height: 42px;
+  margin-bottom: 45px;
 }
 
 .header-top form {
   float: left;
   font-size: 17px;
+  color: #ffffff;
+}
+
+.header-top input[type="submit"] {
+  display: none;
+}
+
+.header-top input{
+  border: none;
+  background-color: #293449;
 }
 
 .header-top form:before {
@@ -107,14 +114,13 @@ li {
 .header-top ul {
   float: right;
   margin: 0;
+  width: 450px;
 }
 
 .header-top ul a {
   font-size: 17px;
-  line-height: 42px;
   margin-right: 5px;
-  min-height: 42px;
-  width: 150px;
+  width: 140px;
   background-color: #293449;
   text-align: center;
 }
@@ -123,24 +129,16 @@ li {
   background-color: #63a63e;
 }
 
-.user-interaction {
-  padding-top: 46px;
-  padding-bottom: 60px;
-  margin-bottom: 59px;
-  background-color: #f1f5f7;
-}
-
 .about {
+  float: left;
   font-size: 17px;
   font-style: italic;
   line-height: 23px;
   color: #ee3643;
-  float: left;
   width: 247px;
   padding-left: 53px;
-  padding-top: 7px;
-  margin-right: 10px;
-  margin-bottom: 43px;
+  margin-right: 20px;
+  margin-bottom: 40px;
 }
 
 .top-contacts {
@@ -151,16 +149,16 @@ li {
 
 .telephone {
   font-size: 21px;
-  color: #e9292a;
   line-height: 39px;
   text-align: center;
-  width: 194px;
+  color: #e9292a;
+  width: 260px;
   border: 3px solid #ffffff;
 }
 
 .address {
   font-size: 14px;
-  padding: 10px;
+  padding: 5px;
   color: #32425c;
 }
 
@@ -209,7 +207,6 @@ li {
 }
 
 nav ul {
-  height: 55px;
   border-bottom: 5px solid #293449;
   background-color: #32425c;
 }
@@ -228,6 +225,7 @@ nav a {
 
 .section-head h2 {
   float: left;
+  width: 370px;
   padding-left: 30px;
   padding-top: 5px;
   color: #32425c;
@@ -235,19 +233,20 @@ nav a {
 
 .section-head .btn {
   float: right;
+  width: 252px;
   text-align: center;
   margin: 24px;
-  width: 252px;
 }
 
 .slider-box {
-  margin-bottom: 53px;
+  margin-bottom: 50px;
+  margin-top: 60px;
 }
 
 .promo {
   float:left;
-  color: #ffffff;
   width: 300px;
+  color: #ffffff;
   margin-bottom: 20px;
 }
 
@@ -295,7 +294,6 @@ nav a {
 
 .slider {
   position: relative;
-  background-color: pink;
   float: left;
   width: 620px;
   height: 235px;
@@ -309,22 +307,20 @@ nav a {
   width: 195px;
 }
 
-.slider button {
+.slider span.prev {
   position: absolute;
   bottom: 111px;
-}
-
-.slider button.prev {
+  font-size: 0;
   left: 25px;
 }
 
-.slider button.next {
+.slider span.next {
+  position: absolute;
+  bottom: 111px;
+  font-size: 0;
   right: 20px;
 }
 
-.slider .name p {
-
-}
 .materials {
   background-color: #f6b22d;
 }
@@ -348,13 +344,18 @@ nav a {
 .second {
   display: none;
 }
+.items {
+  width: 940px;
+}
 
 .item {
+  font-size: 17px;
   display: inline-block;
   vertical-align: top;
   width: 218px;
-  height: 315px;
+  min-height: 315px;
   margin-right: 20px;
+  margin-bottom: 20px;
   border: 1px solid #e5e5e5;
 }
 
@@ -375,16 +376,17 @@ nav a {
   display: none;
 }
 
-
 .brands-logo {
+  width: 940px;
   margin-bottom: 65px;
 }
 
 .brand {
   display: inline-block;
   vertical-align: top;
+  text-align: center;
   width: 218px;
-  height: 143px;
+  min-height: 143px;
   margin-right: 20px;
   margin-bottom: 20px;
   border: 1px solid #e5e5e5;
@@ -395,7 +397,7 @@ nav a {
 }
 
 .services {
-  padding-bottom: 70px;
+  padding-bottom: 100px;
   margin-bottom: 40px;
   background-color: #f2f6f8;
   background-image: url("img/service-car");
@@ -406,15 +408,17 @@ nav a {
 
 .services p {
   width: 400px;
+  margin-bottom: 30px;
 }
 
-.services-slider div.active {
-  float: right;
+.services-slider{
+  width: 595px;
 }
-
 .services-slider ul {
   float: left;
   width: 240px;
+  margin-left: -40px;
+  margin-top: 35px;
 }
 
 .services-slider ul button {
@@ -422,11 +426,15 @@ nav a {
   color: #ffffff;
   text-align: left;
   width: 240px;
-  height: 60px;
   background-color: #32425c;
 }
 
-.modal {
+.slider-content-active {
+  float:right;
+  width: 275px;
+}
+
+.slider-content {
   display: none;
 }
 
@@ -451,11 +459,11 @@ nav a {
 }
 
 .filter {
+  float: left;
+  width: 200px;
   font-family: PT Sans;
   text-transform: uppercase;
-  float: left;
   margin: 0;
-  width: 200px;
 }
 
 .filter .section-head {
@@ -487,7 +495,6 @@ fieldset.power {
   padding-bottom: 15px;
 }
 
-
 .btn-catalog {
   font-family: PT Sans;
   text-transform: uppercase;
@@ -506,8 +513,8 @@ fieldset.power {
 
 .main-catalog  {
   float: right;
-  margin-bottom: 60px;
   width: 700px;
+  margin-bottom: 60px;
 }
 
 .main-catalog .section-head {
@@ -536,22 +543,18 @@ fieldset.power {
 }
 
 .catalog {
-  margin-bottom: 40px;
   font-size: 0;
 }
 
-.main-catalog .catalog > .item {
-  font-size: 17px;
-  margin-bottom: 20px;
-}
 .main-catalog .catalog .item:nth-child(3n) {
   margin-right: 0;
 }
 
 .pages {
-  float: left;
-  margin: 0;
+  margin-left: -40px;
+  margin-top: 0;
 }
+
 .pages .btn-catalog {
   padding-left: 13px;
   padding-right: 13px;
@@ -584,7 +587,7 @@ fieldset.power {
   line-height: 35px;
 }
 
-.about-company span:before {
+.about-company li:before {
   content:"";
   width: 25px;
   height: 2px;
@@ -613,8 +616,11 @@ fieldset.power {
   margin-bottom: 30px;
 }
 
+.modal {
+  display: none;
+}
+
 .few-words {
-  clear: both;
   background-color: #f2f6f8;
   padding-top: 60px;
   padding-bottom: 60px;
@@ -635,31 +641,36 @@ fieldset.power {
 }
 
 .footer .logo {
-  float: left;
   font-size: 30px;
   line-height: 63px;
-  width: 220px;
 }
 
 .footer-bottom {
   background-color: #293449;
-  padding-top: 35px;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .footer-top ul {
   float: right;
+  min-width: 560px;
   padding: 0;
   margin: 0;
 }
 
-.footer-top ul {
-  background-color: pink;
+.first-line ul {
+  margin-top: 20px;
 }
+
 .first-line ul a {
   font-size: 17px;
   line-height: 55px;
   padding-right: 30px;
   padding-left: 25px;
+}
+
+.second-line ul {
+  margin-bottom: 60px;
 }
 
 .second-line ul a {
@@ -669,26 +680,25 @@ fieldset.power {
   padding-left: 25px;
   color: #ffd180;
 }
+
 .footer .address {
+  float: left;
+  width: 325px;
   font-size: 18px;
   color: #f1f5f7;
-  padding-bottom: 30px;
-  padding-top: 30px;
-  width: 325px;
+  padding-top: 15px;
 }
 
 .copyright {
-  font-size: 16px;
   float: left;
+  font-size: 16px;
+  width: 340px;
   color: #ffffff;
-  padding-left: 5px;
-  width: 230px;
 }
 
-.footer-bottom ul {
+.footer-bottom .social {
   float: left;
-  width: 140px;
-  padding-left: 150px;
+  width: 240px;
   font-size: 0;
 }
 
@@ -696,7 +706,6 @@ fieldset.power {
   width: 40px;
   height: 40px;
   background-color: #212a3a;
-  margin-bottom: 30px;
   border-radius: 50%;
 }
 
@@ -704,13 +713,21 @@ fieldset.power {
   margin-right: 5px;
 }
 
-.htmlacademy {
+.htmlacademy-email {
   font-size: 16px;
-  float: right;
-  width: 140px;
+  float: left;
+  width: 170px;
   color: #ffffff;
 }
 
-.htmlacademy a{
+.htmlacademy {
+  font-size: 16px;
+  float: right;
+  width: 110px;
+  color: #ffffff;
+}
+
+.htmlacademy a,
+.htmlacademy-email a {
   color: #ffd180;
 }
