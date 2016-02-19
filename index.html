@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
+    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Cuprum:400,700italic,700&subset=cyrillic' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=cyrillic' rel='stylesheet' type='text/css'>
@@ -23,7 +24,7 @@
               </a>
             </li>
             <li>
-              <a href="#" class="cart full">Корзина:
+              <a href="#" class="cart">Корзина:
                 <span class="cart-counter">0</span>
               </a>
             </li>
@@ -60,7 +61,7 @@
       <div class="container">
         <section class="slider-box">
           <div class="slider-box-top clearfix">
-            <div class="promo materials">
+            <div class="promo materials flag">
               <div class="promo-name">Материалы</div>
               <a href="#" class="btn">На любой вкус</a>
             </div>
@@ -102,57 +103,46 @@
             <a href="#" class="btn">Все популярные товары</a>
           </div>
           <div class="catalog">
-            <div class="item">
+            <article class="item">
               <div class="item-buttons">
-                <a href="#">Купить</a>
-                <a href="#">В закладки</a>
+                <a href="#" class="buy">Купить</a>
+                <a href="#" class="bookmark">В закладки</a>
               </div>
-              <div class="img"><img src="img/item1.jpg" alt="перфоратор" width="184" height="164"></div>
-              <a href="#" class="type-model">
-                <span class="type">Перфоратор BOSCH</span>
-                <span class="model">BFG 9000</span>
-              </a>
+              <div class="img"><img width="218" height="168" src="img/item1.jpg" alt="перфоратор"></div>
+              <div class="type-model">Перфоратор BOSCH BFG 9000</div>
               <div class="item-discount">32500 P</div>
               <div class="item-price">25500 P.</div>
-            </div>
-            <div class="item">
+            </article>
+            <article class="item">
               <div class="item-buttons">
-                <a href="#">Купить</a>
-                <a href="#">В закладки</a>
+                <a href="#" class="buy">Купить</a>
+                <a href="#" class="bookmark">В закладки</a>
               </div>
-              <div class="img"><img src="img/item2.jpg" alt="перфоратор" width="127" height="112"></div>
-              <a href="#" class="type-model">
-                <span class="type">Перфоратор BOSCH</span>
-                <span class="model">BFG 3000</span>
-              </a>
+              <div class="img"><img width="218" height="168" src="img/item2.jpg" alt="перфоратор"></div>
+              <div class="type-model">Перфоратор BOSCH BFG 3000</div>
               <div class="item-discount">22500 P</div>
               <div class="item-price">15500 P.</div>
-            </div>
-            <div class="item">
+            </article>
+            <article class="item">
               <div class="item-buttons">
-                <a href="#">Купить</a>
-                <a href="#">В закладки</a>
+                <a href="#" class="buy">Купить</a>
+                <a href="#" class="bookmark">В закладки</a>
               </div>
-              <div class="img"><img src="img/item3.jpg" alt="перфоратор" width="144" height="128"></div>
-              <a href="#" class="type-model">
-                <span class="type">Перфоратор BOSCH</span>
-                <span class="model">BFG 6000</span>
-              </a>
+              <div class="img"><img width="218" height="168" src="img/item3.jpg" alt="перфоратор"></div>
+              <div class="type-model">Перфоратор BOSCH BFG 6000</div>
               <div class="item-discount">30500 P</div>
               <div class="item-price">25500 P.</div>
-            </div>
-            <div class="item">
+            </article>
+            <article class="item flag">
               <div class="item-buttons">
-                <a href="#">Купить</a>
-                <a href="#">В закладки</a>
+                <a href="#" class="buy">Купить</a>
+                <a href="#" class="bookmark">В закладки</a>
               </div>
-              <div class="img"><img src="img/item2.jpg" alt="перфоратор" width="127" height="112"></div>
-              <a href="#" class="type-model">
-                <span class="type">Перфоратор BOSCH</span>
-                <span class="model">BFG 2000</span>
-              </a>
+              <div class="img"><img width="218" height="168" src="img/item2.jpg" alt="перфоратор"></div>
+              <div class="type-model">Перфоратор BOSCH BFG 2000</div>
+              <div class="item-discount"></div>
               <div class="item-price">12500 P.</div>
-            </div>
+            </article>
           </div>
         </section>
         <section class="brands-logo">
@@ -161,14 +151,14 @@
             <a href="#" class="btn">Все производители</a>
           </div>
           <div class="catalog">
-            <a href="#" class="brand"><img src="img/bosch.png" width="126" height="37" alt="Bosch"></a>
-            <a href="#" class="brand"><img src="img/makita.png" width="123" height="40" alt="Makita"></a>
-            <a href="#" class="brand"><img src="img/dewalt.png" width="146" height="44" alt="Dewalt"></a>
-            <a href="#" class="brand"><img src="img/interskol.png" width="200" height="88" alt="Интерскол"></a>
-            <a href="#" class="brand"><img src="img/hitachi.png" width="169" height="31" alt="Hitachi"></a>
-            <a href="#" class="brand"><img src="img/lg.png" width="121" height="73" alt="LG"></a>
-            <a href="#" class="brand"><img src="img/aeg.png" width="121" height="96" alt="AEG"></a>
-            <a href="#" class="brand"><img src="img/metabo.png" width="204" height="69" alt="Metabo"></a>
+            <a href="#" class="brand"><img width="218" height="143" src="img/bosch.png" alt="Bosch"></a>
+            <a href="#" class="brand"><img width="218" height="143" src="img/makita.png" alt="Makita"></a>
+            <a href="#" class="brand"><img width="218" height="143" src="img/dewalt.png" alt="Dewalt"></a>
+            <a href="#" class="brand"><img width="218" height="143" src="img/interskol.png" alt="Интерскол"></a>
+            <a href="#" class="brand"><img width="218" height="143" src="img/hitachi.png" alt="Hitachi"></a>
+            <a href="#" class="brand"><img width="218" height="143" src="img/lg.png" alt="LG"></a>
+            <a href="#" class="brand"><img width="218" height="143" src="img/aeg.png" alt="AEG"></a>
+            <a href="#" class="brand"><img width="218" height="143" src="img/metabo.png" alt="Metabo"></a>
           </div>
         </section>
       </div>
@@ -201,7 +191,7 @@
       </section>
       <div class="container clearfix">
         <section class="about-company">
-          <h2>Компания "Техномарт"</h2>
+          <h2>Компания «Техномарт»</h2>
           <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
           <p>Мы поможем доставить ваш товар в самые отдаленные точки России! Техномарт&nbsp;работает&nbsp;со многими транспортными компаниями:</p>
             <ul>
@@ -218,21 +208,19 @@
             <img src="img/map.jpg"  width="300" height="158" alt="г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
           </a>
           <a href="#" class="btn">Заблудились? Напишите нам!</a>
-          <form class="modal">
+          <form class="modal-right-us">
             <fieldset>
-              <label>Ваше имя:
+              <label class="enter-name">Ваше имя:<br>
                 <input type="text" name="login" value="Представьтесь, пожалуйста">
               </label>
-              <label>Ваш e-mail:
+              <label class="enter-email">Ваш e-mail:<br>
                 <input type="email" name="email" value="Для отправки ответа">
               </label>
-            </fieldset>
-            <fieldset>
-              <label>Текст письма:
-                <textarea rows="6" cols="40" name="text">В свободной форме</textarea>
+              <label class="textarea">Текст письма:<br>
+                <textarea rows="5" cols="58" name="text">В свободной форме</textarea>
               </label>
             </fieldset>
-            <input type="submit" value="Отправить">
+            <a class="send-data"><input type="submit" value="Отправить" class="btn"></fieldset></a>
           </form>
         </section>
       </div>
