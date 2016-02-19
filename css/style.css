@@ -22,7 +22,9 @@ h2 {
 }
 
 h3 {
+  margin: 0;
   font-size: 36px;
+  line-height: 36px;
   font-weight: normal;
   text-transform: uppercase;
   color: #32425c;
@@ -560,8 +562,8 @@ nav a:active {
 .promo-name {
   font-size: 24px;
   padding-left: 20px;
-  padding-top: 20px;
-  padding-bottom: 14px;
+  padding-top: 22px;
+  padding-bottom: 16px;
 }
 
 .promo .btn {
@@ -587,7 +589,7 @@ nav a:active {
   position: relative;
   float: left;
   width: 620px;
-  min-height: 260px;
+  min-height: 264px;
   margin-right: 20px;
 }
 
@@ -872,9 +874,11 @@ nav a:active {
   vertical-align: top;
   width: 218px;
   text-align: center;
-  min-height: 143px;
+  height: 143px;
   margin-right: 20px;
   margin-bottom: 20px;
+  padding-bottom: 0;
+  overflow: hidden;
   border: 1px solid #e5e5e5;
 }
 
@@ -899,22 +903,38 @@ nav a:active {
 }
 
 .services h2 {
-  padding-top: 65px;
+  padding-top: 60px;
 }
 
-.services p {
-  padding-bottom: 30px;
+.service-slogan > p {
+  margin-bottom: 0;
 }
 
 .services-slider ul {
+  position: relative;
   float: left;
   width: 240px;
   padding-left: 0;
-  margin-top: 35px;
+  padding-right: 60px;
+  padding-top: 70px;
+  padding-bottom: 100px;
+  margin: 0;
+}
+
+.services-slider ul::after {
+  position: absolute;
+  content: "";
+  width: 10px;
+  height: 272px;
+  top: 20px;
+  left: 230px;
+  background-image: url("../img/shadow.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 .services-slider button {
-  width: 220px;
+  width: 240px;
   padding-left: 20px;
   padding-top: 15px;
   padding-bottom: 15px;
@@ -937,32 +957,95 @@ nav a:active {
   border: none;
 }
 
-.slider-content-delivery {
+.slider-content {
   float:right;
-  width: 275px;
-  min-height: 315px;
-  padding-right: 344px;
+  padding-top: 70px;
+  min-height: 285px;
+  background-repeat: no-repeat;
+  background-color: #f2f6f8;
+  border: none;
+}
+
+.slider-content p {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.logistics {
+  display: none;
+  width: 300px;
+  padding-right: 340px;
+}
+
+.services .logistics p {
+  position: relative;
+}
+
+.logistics p::after {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 468px;
+  height: 261px;
+  right: -345px;
+  bottom: -124px;
   background-image: url("../img/service-car.png");
   background-repeat: no-repeat;
-  background-position: 100% 100%;
+  background-position: 0 0;
 }
 
-.slider-content-guarantee {
+.guarantee {
   display: none;
-  float:right;
-  width: 275px;
+  width: 380px;
+  padding-right: 240px;
+}
+
+.services .guarantee p {
+  position: relative;
+}
+
+.guarantee p::after {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 468px;
+  height: 261px;
+  right: -330px;
+  bottom: -100px;
   background-image: url("../img/service-guarantee.png");
   background-repeat: no-repeat;
-  background-position: 70% 100%;
+  background-position: 0 0;
 }
 
-.slider-content-credit {
+.credit {
   display: none;
-  float: right;
-  width: 275px;
+  width: 300px;
+  padding-right: 340px;
+}
+
+.services .credit p {
+  position: relative;
+}
+
+.credit p::after {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 465px;
+  height: 285px;
+  right: -355px;
+  bottom: -170px;
   background-image: url("../img/service-credit.png");
   background-repeat: no-repeat;
-  background-position: 70% 100%;
+  background-position: 0 0;
+}
+
+.credit .btn {
+  width: 195px;
+}
+
+.slider-content.active {
+  display: block;
 }
 
 .breadcrumbs {
