@@ -5,7 +5,6 @@
     <title>HTML Academy: Техномарт каталог</title>
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
-    <link href='https://fonts.googleapis.com/css?family=Cuprum:400,700italic,700&subset=cyrillic' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=cyrillic' rel='stylesheet' type='text/css'>
   </head>
   <body>
@@ -71,7 +70,7 @@
     <main>
       <div class="container clearfix">
         <ul class="breadcrumbs">
-          <li><a href="#" class="home">Главная</a></li>
+          <li><a href="technomart.ru" class="home">Главная</a></li>
           <li><a href="#">Каталог</a></li>
           <li><a href="#">Инструмент</a></li>
           <li><a href="#">Перфораторы</a></li>
@@ -88,52 +87,46 @@
                   <div class="line">
                     <div class="line-inside"></div>
                   </div>
-                  <div class="circle1"></div>
-                  <div class="circle2"></div>
+                  <div class="circle-min"></div>
+                  <div class="circle-max"></div>
                 </div>
-                <div class="numeric-range">
+                <div class="numeric-range clearfix">
                   <input type="text" class="numeric-range-minimum" value="0">
+                  <span class="dash"></span>
                   <input type="text" class="numeric-range-maximum" value="30000">
-              </div>
-            </fieldset>
-            <fieldset class="brands">
-              <legend>Производители</legend>
-              <label>
-                <input type="checkbox" name="bosch" checked>Bosch
-              </label>
-              <label>
-                <input type="checkbox" name="interskol">Интерскол
-              </label>
-              <label>
-                <input type="checkbox" name="makita" checked>Makita
-              </label>
-              <label>
-                <input type="checkbox" name="dewalt">Dewalt
-              </label>
-              <label>
-                <input type="checkbox" name="hitachi">Hitachi
-              </label>
-            </fieldset>
-            <fieldset class="power">
-              <legend>Питание</legend>
-              <label>
-                <input type="radio" name="power" value="cordless" checked>Аккумуляторные
-              </label>
-              <label>
-                <input type="radio" name="power" value="wired">Сетевые
-              </label>
-            </fieldset>
-            <a href="#"><button type="submit">Показать</button></a>
+                </div>
+              </fieldset>
+              <fieldset class="brands">
+                <legend>Производители</legend>
+                <input type="checkbox" name="bosch" id="Bosch" checked>
+                <label for="Bosch">Bosch</label>
+                <input type="checkbox" name="interskol" id="interskol">
+                <label for="interskol">Интерскол</label>
+                <input type="checkbox" name="makita" id="Makita" checked>
+                <label for="Makita">Makita</label>
+                <input type="checkbox" name="dewalt" id="Dewalt">
+                <label for="Dewalt">Dewalt</label>
+                <input type="checkbox" name="hitachi" id="hitachi">
+                <label for="hitachi">Hitachi</label>
+              </fieldset>
+              <fieldset class="power">
+                <legend>Питание</legend>
+                <input type="radio" name="power" value="cordless" id="cordless" checked>
+                <label for="cordless">Аккумуляторные</label>
+                <input type="radio" name="power" value="wired" id="wired">
+                <label for="wired">Сетевые</label>
+              </fieldset>
+            <button type="submit">Показать</button>
           </form>
         </section>
         <section class="main-catalog">
           <div class="section-head">Сортировка:
-            <ul>
+            <ul class="sort">
               <li><a href="#">По цене</a></li>
               <li><a href="#">По типу</a></li>
               <li><a href="#">По функционалу</a></li>
-              <li><a href="#">Вверх</a></li>
-              <li><a href="#">Вниз</a></li>
+              <li><a href="#" class="icon-up-dir active"></a></li>
+              <li><a href="#" class="icon-down-dir"></a></li>
             </ul>
           </div>
           <div class="catalog">

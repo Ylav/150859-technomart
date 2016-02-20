@@ -5,7 +5,6 @@
     <title>HTML Academy: Техномарт</title>
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
-    <link href='https://fonts.googleapis.com/css?family=Cuprum:400,700italic,700&subset=cyrillic' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=cyrillic' rel='stylesheet' type='text/css'>
   </head>
   <body>
@@ -13,8 +12,9 @@
       <div class="header-top">
         <div class="container clearfix">
           <div class="logo">Техномарт</div>
-          <form action="#" class="search">
-            <label class="search">Поиск: <input type="search" name="search"></label>
+          <form action="#">
+            <label for="search">Поиск</label>
+            <input type="search" name="search" id="search">
             <input type="submit" value="Поиск">
           </form>
           <ul>
@@ -27,6 +27,13 @@
               <a href="#" class="cart">Корзина:
                 <span class="cart-counter">0</span>
               </a>
+              <div class="modal-cart-added">
+                <div class="message">Товар добавлен в корзину!</div>
+                <div class="message-choice clearfix">
+                  <a class="btn to-buy">Оформить заказ</a>
+                  <a class="btn to-choose">Продолжить покупки</a>
+                </div>
+              </div>
             </li>
             <li><a href="#" class="get">Оформить заказ</a></li>
           </ul>
@@ -58,7 +65,7 @@
       </div>
     </header>
     <main>
-      <div class="container">
+      <div class="main container">
         <section class="slider-box">
           <div class="slider-box-top clearfix">
             <div class="promo materials flag">
@@ -77,8 +84,8 @@
           <div class="slider-box-bottom clearfix">
             <div class="slider first">
               <h2>Перфораторы<br><span>Настоящие мужские игрушки</span></h2>
-              <span class="prev">Предыдущий слайд</span>
-              <span class="next">Следующий слайд</span>
+              <span class="prev icon-left">Предыдущий слайд</span>
+              <span class="next icon-right">Следующий слайд</span>
               <a href="#" class="btn">Открыть каталог</a>
             </div>
             <div class="slider second">
@@ -209,7 +216,7 @@
             <img src="img/map.jpg"  width="300" height="158" alt="г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
           </a>
           <a href="#" class="btn">Заблудились? Напишите нам!</a>
-          <form class="modal-right-us">
+          <form class="modal-right-us active">
             <fieldset>
               <label class="enter-name">Ваше имя:<br>
                 <input type="text" name="login" value="Представьтесь, пожалуйста">
