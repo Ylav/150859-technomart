@@ -203,8 +203,7 @@ input[type="search"]:hover,
   background-color: #212a3a;
 }
 
-input[type="search"]:focus,
-.header-top form:focus {
+input[type="search"]:focus {
   background-color: #ffffff;
 }
 
@@ -594,14 +593,7 @@ nav a:active {
   margin-bottom: 0;
 }
 
-.slider h2 {
-  padding-left: 25px;
-  font-size: 36px;
-  font-weight: bold;
-  color: #ffffff;
-}
-
-.slider span {
+.slider h2 span {
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 18px;
   font-weight: normal;
@@ -641,13 +633,31 @@ nav a:active {
   width: 620px;
   min-height: 264px;
   margin-right: 20px;
+  margin-top: 0;
 }
 
-.slider-box .first {
+.slide h2 {
+  padding-left: 25px;
+  margin: 0;
+  padding-top: 27px;
+  font-size: 36px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.slide {
+  margin-top: 0;
+  width: 620px;
+  height: 264px;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.first {
   background-image: url("../img/bg-slider-perforator.jpg");
 }
 
-.slider-box .second {
+.second {
   background-image: url("../img/bg-slider-drill.jpg");
 }
 
@@ -680,6 +690,45 @@ nav a:active {
   background-image: url("../img/spritesheet-different.png");
   background-repeat: no-repeat;
   background-position: -5px -77px;
+}
+
+.slide {
+  display: none;
+}
+
+.slider input[type="radio"] {
+  display: none;
+}
+
+.slider-controls {
+  position: absolute;
+  bottom: 22px;
+  left: 50%;
+}
+
+.slider-controls label {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  margin: 0 5px;
+  vertical-align: top;
+  background-color: #ffffff;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+#indicator1:checked ~ .slide.first {
+  display: block;
+}
+
+#indicator2:checked ~ .slide.second {
+  display: block;
+}
+
+#indicator1:checked ~ .slider-controls label[for="indicator1"],
+#indicator2:checked ~ .slider-controls label[for="indicator2"] {
+  background: #ee3643;
 }
 
 .materials {
@@ -750,6 +799,11 @@ nav a:active {
 .second {
   display: none;
 }
+
+.second.active {
+  display: block;
+}
+
 .items {
   width: 940px;
 }
@@ -958,7 +1012,7 @@ nav a:active {
 }
 
 .services {
-  margin-bottom: 40px;
+  margin-bottom: 60px;
   background-color: #f2f6f8;
 }
 
@@ -1514,6 +1568,7 @@ ul.pages .active {
 }
 
 .contacts {
+  position: relative;
   float: right;
   width: 300px;
   margin-bottom: 80px;
@@ -1527,6 +1582,34 @@ ul.pages .active {
 .contacts .btn {
   width: 300px;
   margin-top: 32px;
+}
+
+.map {
+  overflow: hidden;
+}
+
+.big-map {
+  display: none;
+}
+
+.big-map.active {
+  position: absolute;
+  width: 940px;
+  height: 446px;
+  right: 0;
+  top: -28px;
+  box-shadow: 0 0 20px 2px #c4c3c4;
+}
+
+.close-map {
+  position: absolute;
+  display: block;
+  top: 9px;
+  right: 9px;
+  width: 21px;
+  height: 21px;
+  font-size: 0;
+  background: url("../img/spritesheet-different.png") no-repeat -5px -188px;
 }
 
 .few-words {
@@ -1712,17 +1795,6 @@ ul.pages .active {
   box-shadow: 0 20px 60px 0px #616262;
 }
 
-.modal-right-us::after {
-  content: "";
-  position: absolute;
-  top: 9px;
-  right: 9px;
-  width: 21px;
-  height: 21px;
-  background: url("../img/spritesheet-different.png") no-repeat -5px -188px;
-  border-radius: 50%;
-}
-
 .contacts .active {
   display: block;
 }
@@ -1767,7 +1839,7 @@ ul.pages .active {
   margin-bottom: 15px;
 }
 
-.textarea {
+label .textarea {
   clear: both;
 }
 
@@ -1777,6 +1849,7 @@ ul.pages .active {
   padding-right: 80px;
   padding-top: 37px;
   padding-bottom: 37px;
+  margin-top: 27px;
   background-color: #f1f1f1;
 }
 
@@ -1799,8 +1872,19 @@ ul.pages .active {
   box-shadow: 0 20px 60px 0px #616262;
 }
 
-.header-top ul .active {
+.modal-cart-added.active {
   display: block;
+}
+
+.modal-close {
+  position: absolute;
+  display: block;
+  top: 9px;
+  right: 9px;
+  width: 21px;
+  height: 21px;
+  font-size: 0;
+  background: url("../img/spritesheet-different.png") no-repeat -5px -188px;
 }
 
 .message {
@@ -1835,13 +1919,14 @@ ul.pages .active {
   border-radius: 50%;
 }
 
-.message::after {
-  content: "";
+.message-close {
   position: absolute;
+  display: block;
   top: 9px;
   right: 9px;
   width: 21px;
   height: 21px;
+  font-size: 0;
   background: url("../img/spritesheet-different.png") no-repeat -5px -188px;
 }
 

@@ -33,6 +33,7 @@
                   <a class="btn to-buy">Оформить заказ</a>
                   <a class="btn to-choose">Продолжить покупки</a>
                 </div>
+                <span class="message-close">Закрыть окно</span>
               </div>
             </li>
             <li><a href="#" class="get">Оформить заказ</a></li>
@@ -49,7 +50,7 @@
           <div class="personal unauthorized">
             <a href="#" class="login">Войти</a>
             <a href="#" class="registration">Регистрация</a>
-          </ul>
+          </div>
         </section>
         <nav>
           <ul>
@@ -82,17 +83,24 @@
             </div>
           </div>
           <div class="slider-box-bottom clearfix">
-            <div class="slider first">
-              <h2>Перфораторы<br><span>Настоящие мужские игрушки</span></h2>
-              <span class="prev icon-left">Предыдущий слайд</span>
-              <span class="next icon-right">Следующий слайд</span>
-              <a href="#" class="btn">Открыть каталог</a>
-            </div>
-            <div class="slider second">
-              <h2>Дрели<br><span>Соседям на радость!</span></h2>
+            <div class="slider">
               <span class="prev">Предыдущий слайд</span>
               <span class="next">Следующий слайд</span>
-              <a href="#" class="btn">Открыть каталог</a>
+              <input type="radio" id="indicator1" name="toggle" checked>
+              <input type="radio" id="indicator2" name="toggle">
+              <div class="slider-controls">
+                <label for="indicator1"></label>
+                <label for="indicator2"></label>
+              </div>
+
+              <div class="slide first">
+                <h2>Перфораторы<br><span>Настоящие мужские игрушки</span></h2>
+                <a href="#" class="btn">Открыть каталог</a>
+              </div>
+              <div class="slide second">
+                <h2>Дрели<br><span>Соседям на радость!</span></h2>
+                <a href="#" class="btn">Открыть каталог</a>
+              </div>
             </div>
             <div class="promo discount">
               <div class="promo-name">Скидки 50%</div>
@@ -212,11 +220,15 @@
         <section class="contacts">
           <h2>Контакты</h2>
           <p>Вы можете выбрать товар сами, заехав в наш офис:</p>
-          <a href="#" class="map">
+          <a href="#" class="map open-map">
             <img src="img/map.jpg"  width="300" height="158" alt="г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
           </a>
-          <a href="#" class="btn">Заблудились? Напишите нам!</a>
-          <form class="modal-right-us active">
+          <div class="big-map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989424124007!2d30.320894616187985!3d59.93879686904788!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1456000481179" width="940" height="446" frameborder="0" style="border:0" allowfullscreen></iframe>
+            <span class="close-map">Закрыть окно</span>
+          </div>
+          <a href="#" class="btn btn-modal">Заблудились? Напишите нам!</a>
+          <form class="modal-right-us">
             <fieldset>
               <label class="enter-name">Ваше имя:<br>
                 <input type="text" name="login" value="Представьтесь, пожалуйста">
@@ -228,7 +240,8 @@
                 <textarea rows="5" cols="58" name="text">В свободной форме</textarea>
               </label>
             </fieldset>
-            <a class="send-data"><input type="submit" value="Отправить" class="btn"></fieldset></a>
+            <div class="send-data"><input type="submit" value="Отправить" class="btn"></div>
+            <span class="modal-close">Закрыть окно</span>
           </form>
         </section>
       </div>
@@ -278,5 +291,8 @@
         </div>
       </div>
     </footer>
+    <script src="js/modal.js"></script>
+    <script src="js/map.js"></script>
+    <script src="js/cart.js"></script>
   </body>
 </html>
