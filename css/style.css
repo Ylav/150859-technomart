@@ -435,6 +435,7 @@ input[type="search"]::placeholder {
 
 .user {
   position: relative;
+  width: 186px;
   padding-left: 45px;
   padding-right: 20px;
 }
@@ -1498,12 +1499,12 @@ input[type="radio"]:active + label:active::before {
 
 .catalog {
   font-size: 0;
-  margin-bottom: 30px;
   padding-top: 20px;
   margin-left: -20px;
 }
 
-ul.pages {
+.pages {
+  margin-top: 30px;
   padding-left: 0px;
   font-size: 0;
 }
