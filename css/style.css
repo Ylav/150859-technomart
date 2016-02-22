@@ -51,6 +51,7 @@ h1 {
 h2 {
   font-size: 30px;
   font-weight: normal;
+  line-height: normal;
   text-transform: uppercase;
 }
 
@@ -557,7 +558,6 @@ nav a:active {
 .section-head h2 {
   float: left;
   width: 370px;
-  padding-top: 10px;
   margin: 0;
   padding-left: 30px;
   color: #32425c;
@@ -638,7 +638,7 @@ nav a:active {
 
 .slider h2 {
   padding-left: 25px;
-  padding-top: 27px;
+  padding-top: 15px;
   margin: 0;
   font-size: 36px;
   font-weight: bold;
@@ -647,7 +647,6 @@ nav a:active {
 
 .slider p {
   padding-left: 25px;
-  padding-top: 6px;
   margin: 0;
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 18px;
