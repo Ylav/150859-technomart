@@ -529,11 +529,17 @@ nav ul {
 nav a {
   display: inline-block;
   vertical-align: top;
-  padding-right: 30px;
-  padding-left: 30px;
+  width: 118px;
+  text-align: center;
+  /*padding-right: 30px;
+  padding-left: 30px;*/
   padding-top: 15px;
   padding-bottom: 15px;
   font-size: 17px;
+}
+
+.offers {
+  width: 180px;
 }
 
 nav a:hover {
@@ -1642,22 +1648,27 @@ ul.pages .active {
 
 .footer-top ul {
   float: right;
-  max-width: 600px;
+  max-width: 575px;
   margin: 0;
+  padding-left: 0;
 }
 
 .first-line ul {
   padding-top: 40px;
 }
 
-.second-line ul {
-  margin-bottom: 60px;
+.footer-main-menu li {
+  width: 112px;
+  text-align: right;
+}
+
+.footer-add-menu {
   padding-top: 30px;
 }
 
 .footer-top ul a {
+  padding-left: 54px;
   display: inline;
-  padding-left: 55px;
   font-size: 17px;
 }
 
@@ -1677,6 +1688,7 @@ ul.pages .active {
 .footer .address {
   float: left;
   width: 325px;
+  min-height: 90px;
   padding-top: 30px;
   font-size: 18px;
   color: #f1f5f7;
@@ -1835,7 +1847,7 @@ ul.pages .active {
   margin-bottom: 15px;
 }
 
-label .textarea {
+.textarea {
   clear: both;
 }
 
@@ -1918,13 +1930,13 @@ label .textarea {
   cursor: pointer;
 }
 
-.modal-cart-added a.to-buy {
+.modal-cart-added .to-buy {
   float: left;
   width: 220px;
   font-size: 14px;
 }
 
-.modal-cart-added a.to-choose {
+.modal-cart-added .to-choose {
   float: right;
   width: 220px;
   font-size: 14px;
