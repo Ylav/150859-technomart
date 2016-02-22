@@ -1667,9 +1667,12 @@ ul.pages .active {
 }
 
 .footer-top ul a {
-  padding-left: 54px;
   display: inline;
   font-size: 17px;
+}
+
+.footer-add-menu a{
+  padding-left: 54px;
 }
 
 .footer-top ul a:hover {
