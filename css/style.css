@@ -163,15 +163,9 @@ li {
 .header-top form {
   position: relative;
   float: left;
-  width: 270px;
+  max-width: 270px;
   font-size: 17px;
-  color: #ffffff;
-}
-
-.header-top label {
-  padding-left: 45px;
-  padding-top: 9px;
-  padding-bottom: 9px;
+  padding: 0;
 }
 
 .header-top input[type="search"] {
@@ -192,6 +186,7 @@ input[type="search"] {
   min-height: 42px;
   margin-left: 0;
   padding-left: 49px;
+  color: #ffffff;
   background-color: #293449;
   border: none;
 }
@@ -203,6 +198,7 @@ input[type="search"]:hover {
 
 input[type="search"]:focus {
   background-color: #ffffff;
+  color: #000000;
   background-position: -5px -57px;
 }
 
@@ -310,6 +306,7 @@ input[type="search"]::placeholder {
 .full {
   background-color: #ee3643;
 }
+
 .get {
   width: 150px;
   padding-left: 0;
@@ -464,6 +461,7 @@ a.logout {
   position: relative;
   font-size: 0;
   width: 49px;
+  height: 24px;
 }
 
 .logout::before {
@@ -922,7 +920,7 @@ nav a:active {
   margin-bottom: 7px;
   padding-top: 10px;
   padding-bottom: 10px;
-  font-family: 'Cuprum', 'Arial', sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   font-size: 14px;
   text-decoration: none;
   text-transform: uppercase;
@@ -1084,6 +1082,7 @@ nav a:active {
 
 .slider-content {
   float:right;
+  width: 620px;
   min-height: 185px;
   padding-top: 70px;
   padding-bottom: 100px;
@@ -1100,7 +1099,7 @@ nav a:active {
 .logistics {
   display: none;
   width: 300px;
-  padding-right: 340px;
+  padding-right: 320px;
 }
 
 .services .logistics p {
@@ -1113,7 +1112,7 @@ nav a:active {
   content: "";
   width: 468px;
   height: 261px;
-  right: -345px;
+  right: -320px;
   bottom: -124px;
   background-image: url("../img/service-car.png");
   background-repeat: no-repeat;
@@ -1146,7 +1145,7 @@ nav a:active {
 .credit {
   display: none;
   width: 300px;
-  padding-right: 340px;
+  padding-right: 320px;
 }
 
 .services .credit p {
@@ -1159,7 +1158,7 @@ nav a:active {
   content: "";
   width: 465px;
   height: 285px;
-  right: -355px;
+  right: -335px;
   bottom: -170px;
   background-image: url("../img/service-credit.png");
   background-repeat: no-repeat;
@@ -1241,9 +1240,10 @@ nav a:active {
 }
 
 .filter legend {
-  padding-bottom: 15px;
-  padding-top: 15px;
+  padding-bottom: 17px;
+  padding-top: 17px;
   font-weight: bold;
+  font-size: 17px;
 }
 
 fieldset {
@@ -1461,8 +1461,9 @@ input[type="radio"]:active + label:active::before {
 }
 
 .sort .active {
-  color:#ee3643;
+  color: #ee3643;
   opacity: 1;
+  border: none;
 }
 
 .sort .icon-up-dir {
@@ -1649,7 +1650,7 @@ ul.pages .active {
 
 .footer-top ul {
   float: right;
-  max-width: 575px;
+  max-width: 590px;
   margin: 0;
   padding-left: 0;
 }
@@ -1659,7 +1660,7 @@ ul.pages .active {
 }
 
 .footer-main-menu li {
-  width: 112px;
+  width: 115px;
   text-align: right;
 }
 
@@ -1673,7 +1674,7 @@ ul.pages .active {
 }
 
 .footer-add-menu a{
-  padding-left: 54px;
+  padding-left: 60px;
 }
 
 .footer-top ul a:hover {
@@ -1708,7 +1709,7 @@ ul.pages .active {
 .footer-bottom .social {
   float: left;
   width: 240px;
-  padding-left: 70px;
+  padding-left: 55px;
   font-size: 0;
 }
 
