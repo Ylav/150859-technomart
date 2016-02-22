@@ -459,7 +459,7 @@ input[type="search"]::placeholder {
   background-position: -5px -303px;
 }
 
-.logout {
+a.logout {
   position: relative;
   font-size: 0;
   width: 49px;
