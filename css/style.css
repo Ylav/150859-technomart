@@ -1447,8 +1447,8 @@ input[type="radio"]:active + label:active::before {
 
 .main-catalog .section-head {
   padding-left: 29px;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  padding-top: 7px;
+  padding-bottom: 3px;
   font-family: "PT Sans", "Arial", sans-serif;;
   text-transform: uppercase;
   color: #000000;
