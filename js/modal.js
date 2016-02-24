@@ -32,9 +32,9 @@ modalForm.addEventListener("click", function (event) {
   }
 });
 
-buyClose.addEventListener("click", function (event) {
+close.addEventListener("click", function (event) {
   event.preventDefault();
-  buyPopup.classList.remove("active");
+  popup.classList.remove("active");
 });
 
 form.addEventListener("submit", function (event) {
