@@ -1,41 +1,69 @@
 var addItem = document.querySelector(".item-buttons .buy");
-var buyPopap = document.querySelector(".modal-cart-added");
+var buyPopup = document.querySelector(".modal-cart-added");
 var buyClose = document.querySelector(".message-close");
 
 addItem.addEventListener("click", function (event) {
   event.preventDefault();
-  buyPopap.classList.add("active");
-})
+  buyPopup.classList.add("active");
+});
 
 buyClose.addEventListener("click", function (event) {
   event.preventDefault();
-  buyPopap.classList.remove("active");
-})
+  buyPopup.classList.remove("active");
+});
 
 var modalForm = document.querySelector(".btn-modal");
-var popap = document.querySelector(".modal-right-us");
-var close = document.querySelector(".modal-close");
+var popup = document.querySelector(".modal-right-us");
+var close = popup.querySelector(".modal-close");
+var login = popup.querySelector("[name=login]")
+var section = document.querySelector(".contacts");
+var form = section.querySelector("form");
+var email = section.querySelector("[name=email]");
+var storage = localStorage.getItem("login")
 
 modalForm.addEventListener("click", function (event) {
   event.preventDefault();
-  popap.classList.add("active");
-})
+  popup.classList.add("active");
+  if (storage) {
+    login.value = storage;
+    email.focus();
+  } else {
+    login.focus();
+  }
+});
 
-close.addEventListener("click", function (event) {
+buyClose.addEventListener("click", function (event) {
   event.preventDefault();
-  popap.classList.remove("active");
-})
+  buyPopup.classList.remove("active");
+});
+
+form.addEventListener("submit", function (event) {
+  if (!login.value || !email.value) {
+    event.preventDefault();
+    console.log("Введите, пожалуйста, логин и пароль");
+  } else {
+    localStorage.setItem("logindata", login.value);
+  }
+});
+
+window.addEventListener("keydown", function(event) {
+  if (event.keyCode === 27) {
+    if (popup.classList.contains("active")) {
+      popup.classList.remove("active");
+    }
+  }
+});
 
 var mapOpen = document.querySelector(".open-map");
-var mapPopap = document.querySelector(".big-map");
+var mapPopup = document.querySelector(".big-map");
 var mapClose = document.querySelector(".close-map");
 
 mapOpen.addEventListener("click", function (event) {
   event.preventDefault();
-  mapPopap.classList.add("active");
-})
+  mapPopup.classList.add("active");
+});
 
 mapClose.addEventListener("click", function (event) {
   event.preventDefault();
-  mapPopap.classList.remove("active");
-})
+  mapPopup.classList.remove("active");
+});

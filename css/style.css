@@ -112,11 +112,11 @@ textarea {
 }
 
 .logo:hover {
-  background: #ca2c37;
+  background-color: #ca2c37;
 }
 
 .logo:active {
-  background: #ba2732;
+  background-color: #ba2732;
 }
 
 ul {
@@ -130,10 +130,10 @@ li {
 
 .btn {
   display: block;
-  font-size: 14px;
   padding-top: 10px;
   padding-bottom: 10px;
   text-transform: uppercase;
+  font-size: 14px;
   line-height: 18px;
   text-align: center;
   background-color: #ee3643;
@@ -163,9 +163,9 @@ li {
 .header-top form {
   position: relative;
   float: left;
+  padding: 0;
   max-width: 270px;
   font-size: 17px;
-  padding: 0;
 }
 
 .header-top input[type="search"] {
@@ -459,9 +459,9 @@ input[type="search"]::placeholder {
 
 a.logout {
   position: relative;
-  font-size: 0;
   width: 49px;
   height: 24px;
+  font-size: 0;
 }
 
 .logout::before {
@@ -530,8 +530,6 @@ nav a {
   vertical-align: top;
   width: 118px;
   text-align: center;
-  /*padding-right: 30px;
-  padding-left: 30px;*/
   padding-top: 15px;
   padding-bottom: 15px;
   font-size: 17px;
@@ -605,11 +603,11 @@ nav a:active {
 }
 
 .promo-name {
-  font-size: 24px;
   padding-left: 20px;
   padding-right: 140px;
   padding-top: 22px;
   padding-bottom: 16px;
+  font-size: 24px;
 }
 
 .promo .btn {
@@ -844,10 +842,10 @@ nav a:active {
 }
 
 .type-model {
-  font-size: 18px;
   margin-top: 10px;
   margin-bottom: 10px;
   padding: 0 25px;
+  font-size: 18px;
 }
 
 .item-discount {
@@ -1509,9 +1507,9 @@ input[type="radio"]:active + label:active::before {
 }
 
 .catalog {
-  font-size: 0;
   padding-top: 20px;
   margin-left: -20px;
+  font-size: 0;
 }
 
 .pages {
